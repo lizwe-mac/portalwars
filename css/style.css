@@ -1,0 +1,86 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: url(https://picsum.photos/seed/picsum/600/1366);
+
+}
+*:hover{
+  outline: 1px solid red;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main{
+  display: none;
+}
+
+.header{
+  display: none;
+}
+
+.section1{
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo{
+  margin-right: auto;
+}
+
+.nav-btn{
+  border: 1px solid orangered; 
+  border-radius: 50%;
+  color: orangered;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.login form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btn{
+  width: 100%;
+  margin-top: 0.2rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
