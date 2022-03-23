@@ -5,12 +5,14 @@ let honour= document.querySelector('.honour')
 let challenges= document.querySelector('.challenges')
 let language= document.querySelector('.language')
 let btn = document.querySelector('.btn')
+let btn2 = document.querySelector('.btn2')
 let main = document.querySelector('#main')
 let login_section = document.querySelector('.login-section')
 let header = document.querySelector('header')
-console.log("********************")
+console.log("****************")
 
 btn.addEventListener('click',run)
+btn2.addEventListener('click',run)
 
 function css(element, style) {
     for (const property in style)
@@ -19,6 +21,7 @@ function css(element, style) {
 
 function run(){
     let user_input = document.querySelector('#user_input').value;
+    let user_input2 = document.querySelector('.user_input2').value;
     
     console.log(user_input)
     if(user_input===null || user_input===''){
@@ -27,7 +30,8 @@ function run(){
     }
     else{
         css(main, {
-            'display':'flex'
+            'display':'flex',
+            'flex-wrap':'wrap'
         })
         css(header, {
             'display':'flex'
@@ -47,6 +51,8 @@ fetch(url)
 
 
 function displayResults(json){
+    user_input2.innerText=''
+    user_input.innerText=''
     console.log(json)
     console.table(Object.entries(json.ranks.languages))
     username.innerText=json.username
