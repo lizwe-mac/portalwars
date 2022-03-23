@@ -81,6 +81,14 @@ main{
   width: 100%;
   margin-top: 0.2rem;
 }
+
+@media screen and (max-width:591px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
