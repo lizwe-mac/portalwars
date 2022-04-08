@@ -22,6 +22,7 @@ function css(element, style) {
 function run(){
     let user_input = document.querySelector('#user_input').value;
     let user_input2 = document.querySelector('.user_input2').value;
+    document.querySelector('.link').href=`https://www.codewars.com/users/${user_input.toLowerCase()}`
     
     console.log(user_input)
     if(user_input===null || user_input===''){
