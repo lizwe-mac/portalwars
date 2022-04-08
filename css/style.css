@@ -33,6 +33,11 @@ body {
   /* outline: 1px solid red; */
 }
 
+a{
+  color: #666;
+  text-decoration: none;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -188,6 +193,10 @@ main{
 }
 .rank{
   border: none !important;
+}
+
+.resources{
+  border-top: #666 1px solid;
 }
 @media screen and (min-width:591px) {
   .avatar-username{

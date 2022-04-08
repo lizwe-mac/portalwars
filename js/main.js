@@ -42,7 +42,7 @@ function run(){
         console.log("here".repeat(5))
         document.querySelector('.errormsg').innerText=''
 
-let url = `https://www.codewars.com/api/v1/users/${user_input.toLowerCase()}`
+const url = `https://www.codewars.com/api/v1/users/${user_input.toLowerCase()}`
 console.log(url)
 fetch(url)
   .then( response => response.json() )
